@@ -37,7 +37,7 @@ int main() {
     scanf(" %[^\n]", cidade1); //Ainda não aprendemos sobre essa chamada para nomes compostos, porém meu código estava dando erro sem ele.
 
     printf("Digite a quantidade populacional da cidade:\n");
-    scanf("%u", &populacao1);
+    scanf("%lu", &populacao1);
 
     printf("Digite qual o tamanho da área da cidade (em km²):\n");
     scanf("%f", &area1);
@@ -71,7 +71,7 @@ int main() {
     scanf(" %[^\n]", cidade2); 
 
     printf("Digite a quantidade populacional da cidade:\n");
-    scanf("%u", &populacao2);
+    scanf("%lu", &populacao2);
 
     printf("Digite qual o tamanho da área da cidade (em km²):\n");
     scanf("%f", &area2);
@@ -96,7 +96,7 @@ int main() {
     printf("Estado: %c\n", estado1);
     printf("Código: %s\n", codigo1);
     printf("Nome da Cidade: %s\n", cidade1);
-    printf("População: %u habitantes\n", populacao1);
+    printf("População: %lu habitantes\n", populacao1);
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Número de pontos turísticos: %d\n", pontosTuristicos1);
@@ -108,7 +108,7 @@ int main() {
     printf("Estado: %c\n", estado2);
     printf("Código: %s\n", codigo2);
     printf("Nome da Cidade: %s\n", cidade2);
-    printf("População: %u habitantes\n", populacao2);
+    printf("População: %lu habitantes\n", populacao2);
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Número de pontos turísticos: %d\n", pontosTuristicos2);
@@ -146,10 +146,10 @@ int main() {
     {
         case 1:
             if (populacao1 > populacao2) {
-                printf("\nA carta %s tem %u habitantes, enquanto a carta %s tem %u habitantes!\n", cidade1, populacao1, cidade2, populacao2);
+                printf("\nA carta %s tem %lu habitantes, enquanto a carta %s tem %lu habitantes!\n", cidade1, populacao1, cidade2, populacao2);
                 printf("Carta 1 %s venceu!\n",  cidade1);
             } else if (populacao2 > populacao1) {
-                printf("\nA carta %s tem %u habitantes, enquanto a carta %s tem %u habitantes!\n", cidade1, populacao1, cidade2, populacao2);
+                printf("\nA carta %s tem %lu habitantes, enquanto a carta %s tem %lu habitantes!\n", cidade1, populacao1, cidade2, populacao2);
                 printf("Carta 2 %s venceu!\n", cidade2);
             } else if (populacao1 == populacao2) {
                 printf("\nHouve um empate!\n");
@@ -238,10 +238,10 @@ int main() {
     {
         case 1:
             if (populacao1 > populacao2) {
-                printf("\nA carta %s tem %u habitantes, enquanto a carta %s tem %u habitantes!\n", cidade1, populacao1, cidade2, populacao2);
+                printf("\nA carta %s tem %lu habitantes, enquanto a carta %s tem %lu habitantes!\n", cidade1, populacao1, cidade2, populacao2);
                 printf("Carta 1 %s venceu!\n",  cidade1);
             } else if (populacao2 > populacao1) {
-                printf("\nA carta %s tem %u habitantes, enquanto a carta %s tem %u habitantes!\n", cidade1, populacao1, cidade2, populacao2);
+                printf("\nA carta %s tem %lu habitantes, enquanto a carta %s tem %lu habitantes!\n", cidade1, populacao1, cidade2, populacao2);
                 printf("Carta 2 %s venceu!\n", cidade2);
             } else if (populacao1 == populacao2) {
                 printf("\nHouve um empate!\n");
